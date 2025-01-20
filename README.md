@@ -52,7 +52,34 @@ After doing the analysis we started on modelling. We decided to focus on two dif
 All of these models are also evaluated and compared, to find the best performing model.
 
 ## Results
+Since we tried to predict two different energy sources we will split the results.
+
+### Solar Energy
+
+#### EDA
+!][Total solar energy volume over time](./images/SolarVolumeOverTime.png)
+While analysing the data we discovered the total solar energy production has increased over time. We also found out the solar energy production is higher in the summer compared to the winter.
+
+#### SARIMA
+For the solar energy predictions the SARIMA model performed the best. We were able to get an R² score of 0.945 on the test set and 0.955 on the train set. These results are quite high, and because the R² for the train and test set are also really close to each other means.
+
+![SARIMA Forecast](./images/SARIMA%20Forecast.png)
+
+### Deep Learning
+Unfortunately the deep learning models we tried for this dataset did not produce any good results.
+
+#### LSTM
+![Model loss for LSTM model](./images/LSTM%20Model%20Loss.png)
+In this graph we can see the validation loss is all over the place, this means the model is not effectively training. There is also a high difference in the train and test R² scores: the train score is 0.937 and the test score is 0.839. This means the model is overfitted.
+
+#### BiLSTM
+![Model loss for BiLSTM model](./images/BiLSTM%20Model%20Loss.png)
+This time early stopping was used to prevent overfitting. The validation loss is closer to the training loss, but it is still not as stable as we want, making the model unusable. Comparing the train and test R² scores (0.867 for the train set and 0.834 for the test set) we can see the model is less overfitted than the regular LSTM model.
+
+### Wind Energy
 Outcomes with metrics, visualisations
+#### EDA
+op basis van grafieken is het duidelijk dat er geen seasonality is. 
 
 ## Folder Structure
 The project is divided into the following folders. The data used in the project can be found in the data folder, this contains both the raw and cleaned data. The data_prep folder contains all the notebooks we created for cleaning the data, the eda folder contains all the notebooks where we did the EDA and finally the models folder contains the notebooks used for creating and evaluating the models.
@@ -79,7 +106,9 @@ The project is divided into the following folders. The data used in the project 
     │   └── WindvsWindmillsEDA.ipynb # Marjolein
     ├── models/
     │   └── SolarEnergyPrediction.ipynb # Esther
-    │   └── WindEnergyPrediction.ipynb # Marjolein
+    │   └── WindEnergyPrediction.ipynb # Marjolein    
+    ├── images/ # output images for readme 
+    │  
     └── README.md
 ```
 
