@@ -77,9 +77,16 @@ In this graph we can see the validation loss is all over the place, this means t
 This time early stopping was used to prevent overfitting. The validation loss is closer to the training loss, but it is still not as stable as we want, making the model unusable. Comparing the train and test R² scores (0.867 for the train set and 0.834 for the test set) we can see the model is less overfitted than the regular LSTM model.
 
 ### Wind Energy
-Outcomes with metrics, visualisations
 #### EDA
-op basis van grafieken is het duidelijk dat er geen seasonality is. 
+![Wind graphs](./images/Wind%20graph.png)
+![Wind bar chart](./images/wind%20bar%20chart.png)
+Based on these graphs we can conclude that there is no seasonality in the wind energy production data. The wind speed is similar for all the seasons.
+
+#### LSTM
+
+#### RNN
+
+#### GRU
 
 ## Folder Structure
 The project is divided into the following folders. The data used in the project can be found in the data folder, this contains both the raw and cleaned data. The data_prep folder contains all the notebooks we created for cleaning the data, the eda folder contains all the notebooks where we did the EDA and finally the models folder contains the notebooks used for creating and evaluating the models.
@@ -113,3 +120,21 @@ The project is divided into the following folders. The data used in the project 
 ```
 
 ## References
+We used a number of different sources as research into energy production and models we wanted to use.
+
+**Datasets used**:
+* Energy consumption data (CBS): <https://www.cbs.nl/nl-nl/cijfers/detail/84575NED?q=energie%20verbruik>
+* Energy production data (NED): <https://ned.nl>
+* Solar panels (CBS): <https://opendata.cbs.nl/#/CBS/nl/dataset/85005NED/table>
+* Weather data (KNMI): <https://www.knmi.nl/nederland-nu/klimatologie/uurgegevens>
+* Windmills data (CBS): <https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70960ned/table?dl=577D1>
+
+**Sources**:
+* Gaslicht: <https://www.gaslicht.com/nieuws/bij-welk-weer-wekken-zonnepanelen-de-meeste-energie-op#:~:text=Hogere%20temperatuur%3A%20lagere%20opbrengst,maar%20temperaturen%20van%2030%20graden.>
+* SARIMA (Geeks for geeks): <https://www.geeksforgeeks.org/sarima-seasonal-autoregressive-integrated-moving-average/>
+* LSTM (Geeks for geeks): <https://www.geeksforgeeks.org/deep-learning-introduction-to-long-short-term-memory/>
+* CNN for time series: <https://thejaskiran99.medium.com/unlocking-the-potential-of-convolutional-neural-networks-cnns-in-time-series-forecasting-b2fac329e184>
+* RNN (Geeks for geeks): <https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/>
+* RNN Tutorial: <https://www.datacamp.com/tutorial/tutorial-for-recurrent-neural-network>
+* GRU (Geeks for geeks): <https://www.geeksforgeeks.org/gated-recurrent-unit-networks/>
+* Optuna: <https://medium.com/data-and-beyond/master-the-power-of-optuna-a-step-by-step-guide-ed43500e9b95>
