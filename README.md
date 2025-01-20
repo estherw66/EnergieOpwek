@@ -1,19 +1,15 @@
 # Energie Opwek
 This repository contains all the notebooks for the Data Driven Innovation Challenge. For this challenge we decided to predict renewable energy production in the Netherlands. This data challenge is made by Marjolein van der Eerden and Esther Wolfs.
 
----
-
 ## Table of contents
 [Idea](#idea)
 [Approach](#approach)
 [Results](#results)
 [Folder Structure](#folder-structure)
 
----
 ## Idea
 The original idea was to create a predictive tool for forecasting energy congestion in power grids or other energy networks. For would involve analysing real-time and historical energy data, to detect bottlenecks in the energy flow and provide actionable insights for grid operators to prevent or mitigate congestion issues. However, due to the necessary energy consumption data not being publicly available, this idea is not feasible. Instead, the focus shifted to predicting renewable energy production, specifically solar and wind energy. 
 
----
 ## Approach
 To predict renewable energy we took the following steps:
 
@@ -55,12 +51,8 @@ After doing the analysis we started on modelling. We decided to focus on two dif
 
 All of these models are also evaluated and compared, to find the best performing model.
 
----
-
 ## Results
 Outcomes with metrics, visualisations
-
----
 
 ## Folder Structure
 The project is divided into the following folders. The data used in the project can be found in the data folder, this contains both the raw and cleaned data. The data_prep folder contains all the notebooks we created for cleaning the data, the eda folder contains all the notebooks where we did the EDA and finally the models folder contains the notebooks used for creating and evaluating the models.
