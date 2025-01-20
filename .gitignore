@@ -236,5 +236,5 @@ pyrightconfig.json
 
 config.ini
 
-output
+output(old)
 /tf_env
