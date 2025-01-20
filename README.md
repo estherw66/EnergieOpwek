@@ -82,11 +82,18 @@ This time early stopping was used to prevent overfitting. The validation loss is
 ![Wind bar chart](./images/wind%20bar%20chart.png)
 Based on these graphs we can conclude that there is no seasonality in the wind energy production data. The wind speed is similar for all the seasons.
 
-#### LSTM
+#### Modelling
+![Loss comparison](./images/Loss%20comparison.png)
+In this graph we can see the comparison of the train and validation loss of all the models that were used for predicting the wind energy production.
 
-#### RNN
+![RMSE comparison](./images/RMSE%20comparison.png)
+This chart we can see the comparison of the RMSE of all models. We can see the GRU model has the lowest RMSE.
 
-#### GRU
+![RMSE GRU comparison](./images/RMSE%20comparison%20GRU.png)
+This chart compares the RMSE of the first GRU model with the GRU model that was trained after the optuna trials. The original GRU has a lower RMSE.
+
+![Wind predictions](./images/WindPredictions.png)
+These are the predicted values vs the actual values for all three original models.
 
 ## Folder Structure
 The project is divided into the following folders. The data used in the project can be found in the data folder, this contains both the raw and cleaned data. The data_prep folder contains all the notebooks we created for cleaning the data, the eda folder contains all the notebooks where we did the EDA and finally the models folder contains the notebooks used for creating and evaluating the models.
