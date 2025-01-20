@@ -76,8 +76,8 @@ In this graph we can see the validation loss is all over the place, this means t
 
 #### BiLSTM
 ![Model loss for BiLSTM model](./images/BiLSTM%20Model%20Loss.png)
-This time early stopping was used to prevent overfitting. The validation loss is closer to the training loss, but it is still not as stable as we want, making the model unusable. Comparing the train and test R² scores (0.867 for the train set and 0.834 for the test set) we can see the model is less overfitted than the regular LSTM model.
-
+`This time early stopping was used to prevent overfitting. The validation loss is closer to the training loss, but it is still not as stable as we want, making the model unusable. Comparing the train and test R² scores (0.867 for the train set and 0.834 for the test set) we can see the model is less overfitted than the regular LSTM model.
+`
 ### Wind Energy
 #### EDA
 ![Wind graphs](./images/Wind%20graph.png)
