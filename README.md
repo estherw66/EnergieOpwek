@@ -57,7 +57,7 @@ Since we tried to predict two different energy sources we will split the results
 ### Solar Energy
 
 #### EDA
-!][Total solar energy volume over time](./images/SolarVolumeOverTime.png)
+![Total solar energy volume over time](./images/SolarVolumeOverTime.png)
 While analysing the data we discovered the total solar energy production has increased over time. We also found out the solar energy production is higher in the summer compared to the winter.
 
 #### SARIMA
