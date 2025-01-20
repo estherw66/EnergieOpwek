@@ -1,5 +1,7 @@
 # Energie Opwek
-This repository contains all the notebooks for the Data Driven Innovation Challenge. For this challenge we decided to predict renewable energy production in the Netherlands. This data challenge is made by Marjolein van der Eerden and Esther Wolfs.
+This repository contains all the notebooks for the Data Driven Innovation Challenge. For this challenge we decided to predict renewable energy production in the Netherlands. This data challenge is made by Marjolein van der Eerden and Esther Wolfs. 
+
+All the code can be found in this Github repository: <https://github.com/estherw66/EnergieOpwek>
 
 ## Table of contents
 [Idea](#idea)
