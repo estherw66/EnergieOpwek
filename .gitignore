@@ -237,5 +237,4 @@ pyrightconfig.json
 config.ini
 
 output
-tf_env/Include/site/python3.10/greenlet/greenlet.h
 /tf_env
